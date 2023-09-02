@@ -2,7 +2,7 @@ name: first deploy 3jobs
 on : push
 jobs:
   lint:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -10,7 +10,7 @@ jobs:
         run: npm ci
       - name: Lint
   test:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
@@ -19,7 +19,7 @@ jobs:
       - name : Test code 
         run : npm run test
   deploy:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3

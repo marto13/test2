@@ -2,7 +2,7 @@ name: first deploy
 on : push
 jobs:
   deploy:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3
